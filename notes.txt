@@ -1,0 +1,36 @@
+Para criar um projeto nodejs:
+
+npm init
+
+Preencher algumas informações como nome e descrição do projeto, versão, repo do
+GIT e tipo de licença.
+Será criado um arquivo package.json contendo todas as informações passadas 
+anteriormente.
+O package.json contém todas as informações da estrutura do projeto, por 
+exemplo: as dependências e os scripts a serem executados.
+================================================================================
+
+- Express
+    Express é o web framework para node. Para instalar a última versão:
+
+npm install express -save
+
+--save: Para já adicionar as dependências no package.json
+================================================================================
+
+- Express Generator
+
+O Express Generator cria toda a estrutura básica de um projeto Express.
+npm install express-generator -g
+
+express --view=ejs --git
+
+--view=ejs
+    Utiliza a engine EJS para view (Utiliza scriplet)
+
+--git
+    Adiciona .gitignore
+
+npm install
+npm start
+================================================================================
