@@ -1,4 +1,5 @@
 var express = require('express');
+var _ = require("underscore");
 var router = express.Router();
 var User = require('../models/user');
 
@@ -35,9 +36,7 @@ router.get('/:id', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 
-  var user = new User();
-
-  populateUser(user, req);
+  var user = new User( req.body  );
 
   user.save(function(err) {
     
@@ -56,23 +55,13 @@ router.put('/:id', function(req, res, next) {
 
   var id = req.params.id;
 
-  User.findById(id, function(err, user) {
+  User.findByIdAndUpdate(id, {$set:req.body}, function(err, user) {
     
     if (err) {
       res.send(err);
     }
 
-    populateUser(user, req);
-
-    user.save(function(err) {
-      
-      if (err) {
-        res.send(err);
-      }
-
-      res.json({ message: 'User updated.' });
-
-    });
+    res.json({ message: 'User updated.' });
 
   });
 

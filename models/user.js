@@ -8,7 +8,9 @@ var userSchema = new Schema({
     birthDate: Date,
     acceptTerms: Boolean,
     amountOfCars: Number,
-    balance: Number
+    balance: Number,
+    createdAt: { type: Date, default: Date.now },
+    updatedAt: { type: Date, default: null },
 });
 
 module.exports = mongoose.model('User', userSchema);
