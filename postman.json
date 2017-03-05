@@ -1,0 +1,235 @@
+{
+	"variables": [],
+	"info": {
+		"name": "NodeJS",
+		"_postman_id": "bc9545d5-5553-7248-967e-7037724279ce",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users",
+			"request": {
+				"url": "{{url}}/users",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Julio Chrisostomo",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"url": "{{url}}/users/58962e68fd60b60e4eb08007",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Julio Chrisostomo",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"url": "{{url}}/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Julio Chrisostomo\",\n\t\"email\": \"julio.chrisostomo@gmail.com\",\n\t\"phone\": \"11994673532\",\n\t\"birthDate\": \"22/09/1984\",\n\t\"amountOfCars\": 1,\n\t\"balance\": 12999.99\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"url": "{{url}}/users/5896351f04518812761e2cb4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Julio Chrisostomo\",\n\t\"email\": \"julio.chrisostomo@gmail.com.br\",\n\t\"phone\": \"11994673532\",\n\t\"birthDate\": \"1984-09-22\",\n\t\"amountOfCars\": 1,\n\t\"balance\": 12999.99\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"url": "{{url}}/users/58927acee22bd8094f939d5e",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Julio Chrisostomo",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"url": "{{url}}/users",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Julio Chrisostomo",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/movies",
+			"request": {
+				"url": "{{url}}/movies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Star Wars\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id",
+			"request": {
+				"url": "{{url}}/movies/cfc323b1-a817-42b1-9010-8502ecfb698f",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mad Max\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id",
+			"request": {
+				"url": "{{url}}/movies/cfc323b1-a817-42b1-9010-8502ecfb698f",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/movies",
+			"request": {
+				"url": "{{url}}/movies",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Star Wars\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id",
+			"request": {
+				"url": "{{url}}/movies/cfc323b1-a817-42b1-9010-8502ecfb698f",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Star Wars\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
