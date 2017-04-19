@@ -46,6 +46,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-mongoose.connect('mongodb://localhost:27017/baseproject');
+mongoose.connect('mongodb://mongo:27017/baseproject');
 
 module.exports = app;
